@@ -34,18 +34,19 @@ Size of image data: 154139 bytes (1233112 bits) according to USBPcap
 
 
 
-The first 16 bytes are header.
+The first 16 bytes is the header.
 
 Following that is 496 bytes of nonsens data
 
 and finally 153 600 bytes of image data
+
 </br>
 
 
 
-To understand more about the format, we need to know one things first!
+To understand more about the format, we need to know one things first:
 
-The format of the original image is irrelevant, as long as we can extract the color of each pixel.
+<b>The format of the original image is irrelevant, as long as we can extract the color of each pixel.</b>
    
 </br>
 
@@ -67,7 +68,10 @@ green is shifted 5 positions to the right
 </br>
 
 
-TMS320DM355ZCE allows us to update this screen at 60fps, but in the library I've set the write-timeout to 50ms. That would allow for atleast 20fps.
+TMS320DM355ZCE allows us to update this screen at 60fps, but in the library I've set the write-timeout to 50ms. 
+
+That would allow for atleast 20fps.
+
 
 You'll still be able to reach 60fps without changing anything, I just put it the timeout at 50ms for good measure
 
