@@ -51,7 +51,7 @@ To understand more about the format, we need to know one things first:
 </br>
 
 
-Each pixel on the screen has represented by 2 bytes.
+Each pixel on the screen has represented by 2 bytes (16-bit color depth).
 
 The first is a bitwise OR number of green and blue, where green is first shifted 3 positions to the left
 
